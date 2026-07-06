@@ -1,0 +1,2 @@
+# GF_EDUCACAO_DIGITAL_COMP_PROG_IA_JUL_26_REUNIAO_4
+Projeto empatia CSS incorporado
