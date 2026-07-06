@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Empatia</title>
+    <style>
+        /* Configurações Gerais do Layout */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho do Site */
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Container Principal para centralizar o conteúdo */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Estilização dos Blocos de Conteúdo (Cards) usando <div> */
+        .section-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #2575fc;
+        }
+
+        .definition-card {
+            border-left: 5px solid #6a11cb;
+        }
+
+        h2 {
+            color: #2575fc;
+            margin-top: 0;
+        }
+
+        .definition-card h2 {
+            color: #6a11cb;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Estilização das Listas <ul> e <li> */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #eef2f7;
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Pequeno detalhe antes de cada item da lista */
+        li::before {
+            content: "✦ ";
+            color: #2575fc;
+            margin-right: 10px;
+        }
+
+        /* ESTILIZAÇÃO DA IMAGEM INSERIDA */
+        .img-inspiradora {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 18px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ESTILIZAÇÃO DO BOTÃO LINKTREE (Saiba Mais) */
+        .btn-saiba-mais {
+            display: inline-block;
+            background-color: #2575fc;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-saiba-mais:hover {
+            background-color: #6a11cb;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Empatia no Colégio Estadual de Pato Branco
+            <a href="https://www.instagram.com/pbcpatobranco/"  target="_blanck" title="Colégio Estadual de Pato Branco"> 
+                <img src="./imagens/Logo_Novo.JPG" width="200" alt="Colégio Estadual de Pato Branco" style="border-radius:5%" valign="middle">
+            </a>
+            </h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Seção: O Que é Empatia -->
+        <div class="section-card">
+            <h2>O Que é Empatia?</h2>
+            <p>Empatia é a capacidade psicológica de se colocar no lugar de outra pessoa, buscando compreender seus sentimentos, perspectivas e emoções. É um exercício contínuo de escuta ativa e acolhimento, essencial para a construção de relações humanas saudáveis e respeitosas.</p>
+            
+            <!-- Inclusão da imagem inspiradora 
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop"-->
+            <img src="./imagens/empatia_adolescentes.jfif"
+
+             alt="Crianças colaborando na escola com empatia" class="img-inspiradora">
+        </div>
+
+        <!-- Seção: Como implementar na Escola -->
+        <div class="section-card">
+            <h2>Como implementar na Escola?</h2>
+            <p>O ambiente escolar é o espaço perfeito para semear ações empáticas. Através de práticas pedagógicas conscientes, podemos transformar a vivência dos alunos baseando-se em três pilares fundamentais:</p>
+            
+            <ul>
+                <li>Ajuda Mútua</li>
+                <li>Trabalho em Equipe</li>
+                <li>Apoio Emocional</li>
+            </ul>
+        </div>
+
+        <!-- Seção: Sobre nós -->
+        <div class="section-card definition-card">
+            <h2>Sobre nós</h2>
+            <p>Somos um grupo de estudantes dedicados a criar soluções e conteúdos que transformem o ambiente educacional. Acreditamos que a tecnologia e a educação socioemocional devem caminhar juntas para construir um futuro mais justo, inclusivo e acolhedor para todos.</p>
+            
+            <!-- Link pessoal estilizado como botão Saiba Mais -->
+            <a href="https://linktr.ee/marcelokuhl" target="_blank" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Projeto Empatia. Desenvolvido com foco no acolhimento escolar.</p>
+    </footer>
+
+</body>
+</html>
